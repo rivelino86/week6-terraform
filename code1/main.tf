@@ -21,4 +21,6 @@ resource "aws_iam_user" "river" {
   name = "ansible"
 }
   
-  
+  output "abc" {
+    value = aws_iam_group.ansiblegroup
+  }
