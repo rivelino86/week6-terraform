@@ -9,16 +9,16 @@ terraform {
 # Configure the AWS Provider 
 provider "aws" {
   
-  region = "us-east-1"
+  region = "us-east-2"
 }
  
-resource "aws_iam_group" "developers" {
-  name                     = "developer"
+resource "aws_iam_group" "ansiblegroup" {
+  name                     = "ansiblegroup"
 
 }
 
-resource "aws_iam_user" "lb" {
-  name = "rivelino2022"
+resource "aws_iam_user" "river" {
+  name = "ansible"
 }
   
   
